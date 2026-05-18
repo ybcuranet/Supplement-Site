@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Update your profile · CuraVit</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="quiz-page">
+
+  <header class="quiz-header">
+    <a href="index.html" class="quiz-header__logo">CuraVit</a>
+  </header>
+
+  <main class="quiz-container">
+
+    <!-- Step 1: Email lookup -->
+    <div id="lookupView" class="quiz-section__inner" style="max-width:480px;width:100%">
+      <p class="quiz-section__label">Returning user</p>
+      <h2 class="quiz-section__title">Update your profile</h2>
+      <p style="color:var(--clr-muted)">Enter the email address you used when you first took the quiz.</p>
+      <div class="form-group">
+        <label for="lookupEmail">Email address</label>
+        <input id="lookupEmail" class="q-input" type="email" placeholder="jane@example.com"
+          onkeydown="if(event.key==='Enter')lookup()" />
+      </div>
+      <p id="lookupError" style="color:#ef4444;font-size:.85rem;display:none">No profile found for that email.</p>
+      <button class="btn btn--primary btn--md" onclick="lookup()" style="align-self:flex-start">
+        Find my profile →
+      </button>
+    </div>
+
+    <!-- Step 2: Profile view & update -->
+    <div id="profileView" class="quiz-section__inner" style="max-width:560px;width:100%;display:none">
+      <p class="quiz-section__label">Your profile</p>
+      <h2 class="quiz-section__title">Hi <span id="profileName">there</span></h2>
+
+      <!-- Medical documents -->
+      <div class="update-section">
+        <h3>Medical documents</h3>
+        <p style="color:var(--clr-muted);font-size:.9rem">
+          Upload or replace your medical document (blood tests, GP notes, etc.)
+        </p>
+        <div id="currentDoc"></div>
+        <label class="upload-zone" for="docUpload" style="margin-top:.75rem">
+          <div class="upload-zone__icon">↑</div>
+          <p class="upload-zone__label">Click to upload or drag and drop</p>
+          <p class="upload-zone__sub">PDF, JPG, PNG up to 2 MB</p>
+          <input id="docUpload" type="file" accept=".pdf,.jpg,.jpeg,.png"
+            style="display:none" onchange="handleDocUpload(this)" />
+        </label>
+        <p id="newDocName" class="upload-file-name" style="display:none"></p>
+      </div>
+
+      <!-- Answer summary -->
+      <div class="update-section">
+        <h3>Your answers</h3>
+        <p style="color:var(--clr-muted);font-size:.9rem">
+          Click Edit on any row to change that answer.
+        </p>
+        <div id="answerSummary" class="answer-summary"></div>
+      </div>
+
+      <div style="display:flex;gap:1rem;flex-wrap:wrap;align-items:center">
+        <button class="btn btn--primary btn--md" id="saveBtn" onclick="saveUpdate()">Save document</button>
+        <button class="btn btn--ghost btn--md" onclick="cancelUpdate()">Cancel</button>
+        <p id="saveMsg" style="font-size:.9rem;display:none"></p>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="update.js"></script>
+</body>
+</html>

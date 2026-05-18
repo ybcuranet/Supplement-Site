@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin · CuraVit</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+
+  <!-- Password gate -->
+  <div id="authGate" class="admin-auth-gate">
+    <div class="admin-auth-card">
+      <div class="nav__logo" style="font-size:1.5rem;margin-bottom:2rem">CuraVit</div>
+      <h2 style="margin-bottom:.4rem">Developer access</h2>
+      <p style="color:var(--clr-muted);font-size:.95rem;margin-bottom:1.75rem">Sign in with your admin account.</p>
+      <div class="form-group">
+        <label for="pwInput">Email</label>
+        <input id="pwInput" class="q-input" type="email" placeholder="admin@example.com"
+          onkeydown="if(event.key==='Enter')checkPw()" />
+      </div>
+      <div class="form-group" style="margin-top:.75rem">
+        <label for="pwPassword">Password</label>
+        <input id="pwPassword" class="q-input" type="password" placeholder="••••••••"
+          onkeydown="if(event.key==='Enter')checkPw()" />
+      </div>
+      <p id="pwError" style="color:#ef4444;font-size:.85rem;display:none;margin-top:.5rem"></p>
+      <button class="btn btn--primary btn--md" onclick="checkPw()" style="width:100%;margin-top:1rem">Sign in →</button>
+    </div>
+  </div>
+
+  <!-- Admin main -->
+  <div id="adminMain" style="display:none">
+    <nav class="nav">
+      <div class="nav__logo">
+        CuraVit
+        <span style="font-size:.72rem;font-weight:500;color:var(--clr-muted);margin-left:.35rem;letter-spacing:.04em;text-transform:uppercase">dev</span>
+      </div>
+      <div class="nav__actions">
+        <span id="totalBadge" class="badge">— responses</span>
+        <button class="btn btn--outline btn--sm" onclick="downloadExcel()">↓ Excel</button>
+        <button class="btn btn--ghost btn--sm" onclick="signOut()">Sign out</button>
+      </div>
+    </nav>
+
+    <div class="admin-wrap">
+      <div class="admin-toolbar">
+        <input id="searchBox" class="q-input" type="search"
+          placeholder="Search by name or email…" oninput="renderTable()"
+          style="max-width:380px;font-size:.95rem" />
+      </div>
+
+      <div class="admin-table-wrap">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Age</th>
+              <th>Goals</th>
+              <th>Submitted</th>
+              <th>Medical doc</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="adminTbody"></tbody>
+        </table>
+        <p id="adminEmpty" style="text-align:center;color:var(--clr-muted);padding:3rem 1rem;display:none">
+          No matching responses.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Detail drawer -->
+  <div id="detailOverlay" style="display:none" onclick="if(event.target===this)closeDetail()">
+    <div class="admin-drawer">
+      <div class="admin-drawer__head">
+        <h3 id="drawerTitle">Response</h3>
+        <button class="btn btn--ghost btn--sm" onclick="closeDetail()">✕ Close</button>
+      </div>
+      <div id="drawerBody" class="admin-drawer__body"></div>
+    </div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

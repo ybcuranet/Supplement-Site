@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Assessment · CuraVit</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="quiz-page">
+
+  <header class="quiz-header">
+    <a href="index.html" class="quiz-header__logo">CuraVit</a>
+    <div class="progress-wrap">
+      <div class="progress-bar">
+        <div class="progress-bar__fill" id="progressFill"></div>
+      </div>
+      <span class="progress-label" id="progressLabel"></span>
+    </div>
+    <button class="quiz-header__close" aria-label="Exit quiz" onclick="window.location='index.html'">✕</button>
+  </header>
+
+  <main class="quiz-container" id="quizContainer">
+    <!-- Questions rendered dynamically by quiz.js -->
+  </main>
+
+  <footer class="quiz-footer">
+    <button class="btn btn--ghost btn--md" id="btnBack" onclick="navigate(-1)">← Back</button>
+    <button class="btn btn--primary btn--md" id="btnNext" onclick="navigate(1)">Continue →</button>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="quiz.js"></script>
+</body>
+</html>

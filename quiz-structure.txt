@@ -1,0 +1,240 @@
+Name/ nickname
+Data/privacy statement
+When it comes to vitamins and supplements, you
+(Know more than the average person
+Know a bit, but want to learn more
+Are not convinced yet)
+Have you taken vitamins and/or supplements in the past?
+(Yes, no, on and off)
+How many vitamins or supplements do you currently take?
+(None
+1 to 4
+More than 5)
+
+BASIC
+What sex were you assigned at birth?
+We appreciate this might not align with your gender identity.
+(Male
+Female
+Prefer not to say)
+Are you currently trying for a baby, pregnant or have you recently given birth?
+(I'm trying for a baby
+I'm pregnant
+I'm breastfeeding
+None of the above)
+Are you interested in prenatal or postnatal health?
+(yes, no)
+How old are you?
+
+GOALS
+Which areas of your health are you looking to improve?
+Select up to six goals that you’d like to focus on.
+(Fitness
+Heart
+Bones
+Brain
+Digestion
+Immunity
+Stress
+Sleep
+Joints
+Energy
+Skin
+Hair)
+Do any of these digestive health concerns relate to you?
+(Bloating
+Constipation
+Cramping
+Diarrhea
+Reflux
+None of the above)
+Only show these questions if selected
+How often do you experience diarrhea?
+(Once in a while
+Once a week
+More than once a week)
+How often would you say you are constipated?
+(Once in a while
+Once a week
+Frequently)
+How stressed have you been in the last month?
+(Very Low
+Low
+Moderate
+Above Average
+High)
+How often do you feel stressed?
+(Less than once a month
+Once or twice a month
+About once or twice per week
+Almost every day)
+Do you feel you have trouble focusing or concentrating on tasks?
+(Yes
+No)
+How often do you experience brain fog?
+(Almost every day
+Once or twice a week
+Never)
+Do you need support with your short term memory?
+(Yes
+No)
+Do you have a family history of heart problems?
+(Yes
+No)
+Are you concerned about any of the below
+(High blood pressure
+High cholesterol
+General cardiovascular support
+None of the above)
+Has your doctor or pharmacist recommended that you take Co-Enzyme Q10 (CoQ10) supplements?
+(Yes
+No)
+In relation to colds, flu and infections - how often do you feel unwell each year?
+(More than 4 times
+2-3 times
+Rarely)
+Do you often get cold sores?
+(Yes
+No)
+Have you taken antibiotics more than twice in the past 3 years?
+Antibiotics can cause microbiome disruption.
+(Yes
+No)
+What about your hair?
+(Dryness
+Thinning
+More than usual hair loss
+Slow growth
+None)
+What about your skin?
+(General ageing
+Dryness
+Reduced elasticity
+Breakouts
+None)
+Rate your energy levels
+(Very Low
+Low
+Moderate
+Above Average
+High)
+Do you often experience energy slumps throughout the day?
+(Yes
+No)
+Do you often wake up in the morning feeling sluggish?
+(Yes
+No)
+Do you have a family history of bone issues (such as osteoporosis)?
+(Yes
+No)
+Are you concerned about or do you experience any of the below:
+(Mild arthritis
+Joint pain
+Neither)
+
+DIET
+How would you describe your diet?
+(I eat almost everything!
+Prefer plant-based foods
+Vegetarian
+Vegan
+Other)
+For included diets:
+How often do you eat meat?
+(Never
+Rarely
+Once/twice per week
+Three times per week or more)
+How often do you eat fish or seafood?
+(Never
+Rarely
+Once per week
+Twice per week or more)
+How often do you eat dairy?
+(Never
+Rarely
+Once/twice per week
+Three times per week or more)
+How many serves of fruit and vegetables do you eat daily?
+One serve of vegetables equals one cup of salad vegetables, or half a cup of cooked vegetables.
+(Almost none
+1-2 serves
+3 serves or more)
+Do you need support in managing intense sugar cravings throughout the day?
+(Yes
+No)
+Do you have any diet restrictions or preferences?
+(Limiting dairy
+Gluten free
+Paleo
+None)
+Are you allergic to any of the following?
+(None
+Fish
+Wheat and/or Gluten
+Milk
+Soy
+Sulphites
+Yeast
+Corn/Maize
+Tree nuts
+Peanuts
+Egg
+Sesame)
+
+LIFESTYLE
+How many days per week do you exercise on average?
+(I don't exercise
+1
+2-3
+4 or more)
+If exercise
+What type of exercise do you engage in?
+(Cardio (running, cycling, HIIT)
+Core and stretching (Yoga, Pilates)
+Walking, hiking
+Weightlifting, strength training
+Other)
+How would you rate the intensity of the exercise you engage in?
+(Very Low
+Low
+Moderate
+Above Average
+High)
+When it comes to exercise, you care most about:
+(Performance
+Breaking a sweat
+Muscle Toning
+Muscle Building)
+Do you sometimes get muscle cramps, tightness, or soreness after being active or exercising?
+(Yes
+No)
+How often do you get 20 min of sunshine (at least on your face and hands, without sunscreen)?
+(Rarely, I don't really get in the sun
+On weekends and holidays only
+Every day!)
+Do you often consume 8 or more alcoholic drinks in a week?
+Alcohol can impact nutrient absorption and energy levels.
+(Yes
+No)
+Do you smoke or vape regularly?
+Smoking and vaping can lower your body’s levels of key vitamins like vitamin C and antioxidants.
+(Yes
+No)
+Do you feel you need support with your urinary tract health?
+(Yes
+No)
+Do you experience visual fatigue at the end of the day from looking at screens?
+(Yes
+No)
+Has your doctor recommended that you take iron?
+(Yes
+No)
+In regards to traditional Eastern Medicines like Ayurveda, you:
+(Believe that there is wisdom in alternative medicines.
+Are unsure and would like more information.
+Are skeptical and don't believe in alternative medicines.)
+
+If you would like to receive more personalised and specific suggestions relating to your health please upload any relevent medical documents.
+
+What's your email address?
